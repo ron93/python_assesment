@@ -10,3 +10,15 @@
 # Solution:
 class InputOutString(object):
     # code goes here
+    def __init__(self,str):
+        self.str = str
+     
+
+    def getstring(self,str):
+        str = raw_input("enter a string")
+        return self.str
+
+    
+        
+     
+
