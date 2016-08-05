@@ -14,17 +14,17 @@ def main():
 
             #loop for random password generation
         for x in range(password_length):
-                #rand_pass holds the password generated at each index randomly chosen 
+                #next_char holds the password generated at each index randomly chosen 
             next_char = random.randrange(len(text))
             password = password +text[next_char]
 
         return password
         
     elif user == "Weak" or user == "weak":
-        text = "password","incorect","jonny","aki" ,"mundu"
+        choices = "password","incorect","jonny","aki" ,"mundu"
             #var to specify password length
             #call a method to chose a password from the listed password
-        return random.choice(text)
+        return random.choice(choices)
     
     else:
         #for invalid input
