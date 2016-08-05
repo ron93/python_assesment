@@ -6,13 +6,20 @@
 # For example: if str is "xooxxxxooxo" then the output should return false because there are 6 x's and 5 o's.
 
 
-def Xoxo(str):
-    # code goes here
+#declare method
+#declare two variables to hold the letters to be counted
+#declare two other variables to hold count result
+#compare the two count variables
+#return result
 
 
+def xoxo(str): #declare method
+    sub = "x"#assign value to inital variable
+    sub2 = "o"#assign value to inital variable
 
+    str_count = str.count(sub)#assign count result to another variable
+    str_count2 = str.count(sub2)#assign count result to another variable
 
+    return str_count == str_count2#comapare equality of count results
 
-
-# keep the function call
-print Xoxo("have fun..xoxo")
+print xoxo("xoxxxxooooxowe")#call method
